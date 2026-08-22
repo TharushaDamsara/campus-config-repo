@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/campusflow_notifications}
+
+jwt:
+  secret: ${JWT_SECRET:campusflow-local-dev-secret-key-that-is-at-least-256-bits-long}

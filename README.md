@@ -27,6 +27,3 @@ spring:
 
 Sensitive values (DB passwords, JWT secrets) are supplied via environment variables at runtime and
 are **not** stored in this repo; the values shown here are local-development fallbacks only.
-# campus-config-server
-# campus-config-server
-# campus-config-server

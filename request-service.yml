@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/campusflow_requests}
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+gcp:
+  project-id: ${GCP_PROJECT_ID:GCP_PROJECT_ID_HERE}
+  storage:
+    bucket-name: ${GCS_BUCKET_NAME:campusflow-attachments}
+
+jwt:
+  secret: ${JWT_SECRET:campusflow-local-dev-secret-key-that-is-at-least-256-bits-long}
