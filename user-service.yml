@@ -20,4 +20,4 @@ jwt:
   expiration: 86400000
 
 gcp:
-  project-id: ${GCP_PROJECT_ID:GCP_PROJECT_ID_HERE}
+  project-id: ${GCP_PROJECT_ID:campusflow-eca-2026}

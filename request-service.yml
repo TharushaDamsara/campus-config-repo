@@ -11,9 +11,9 @@ spring:
       max-request-size: 10MB
 
 gcp:
-  project-id: ${GCP_PROJECT_ID:GCP_PROJECT_ID_HERE}
+  project-id: ${GCP_PROJECT_ID:campusflow-eca-2026}
   storage:
-    bucket-name: ${GCS_BUCKET_NAME:campusflow-attachments}
+    bucket-name: ${GCS_BUCKET_NAME:campusflow-attachments-eca-2026}
 
 jwt:
   secret: ${JWT_SECRET:campusflow-local-dev-secret-key-that-is-at-least-256-bits-long}
