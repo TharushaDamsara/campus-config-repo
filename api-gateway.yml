@@ -28,21 +28,23 @@ spring:
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
 
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins:
-              - ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
-              - https://campusflow-frontend-914662694568.us-central1.run.app
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - PATCH
-              - DELETE
-              - OPTIONS
-            allowedHeaders: "*"
-            allowCredentials: true
+      server:
+        webflux:
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                allowedOrigins:
+                  - ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+                  - https://campusflow-frontend-914662694568.us-central1.run.app
+                allowedMethods:
+                  - GET
+                  - POST
+                  - PUT
+                  - PATCH
+                  - DELETE
+                  - OPTIONS
+                allowedHeaders: "*"
+                allowCredentials: true
 
 jwt:
   secret: ${JWT_SECRET:campusflow-local-dev-secret-key-that-is-at-least-256-bits-long}
