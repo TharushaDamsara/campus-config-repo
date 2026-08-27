@@ -36,6 +36,8 @@ spring:
                 allowedOrigins:
                   - ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
                   - https://campusflow-frontend-914662694568.us-central1.run.app
+                  - http://136.69.60.239
+                  - https://136.69.60.239.nip.io
                 allowedMethods:
                   - GET
                   - POST
